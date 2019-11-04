@@ -9,21 +9,23 @@
 /* Begin PBXBuildFile section */
 		C953C3E82370BB8800184E23 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C953C3E72370BB8800184E23 /* AppDelegate.swift */; };
 		C953C3EA2370BB8800184E23 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C953C3E92370BB8800184E23 /* SceneDelegate.swift */; };
-		C953C3EC2370BB8800184E23 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C953C3EB2370BB8800184E23 /* ViewController.swift */; };
-		C953C3EF2370BB8800184E23 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C953C3ED2370BB8800184E23 /* Main.storyboard */; };
 		C953C3F12370BB8900184E23 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C953C3F02370BB8900184E23 /* Assets.xcassets */; };
 		C953C3F42370BB8900184E23 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C953C3F22370BB8900184E23 /* LaunchScreen.storyboard */; };
+		C953C3FD2370BBDC00184E23 /* NewsfeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C953C3FC2370BBDC00184E23 /* NewsfeedViewController.swift */; };
+		C953C3FF2370BC0C00184E23 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C953C3FE2370BC0C00184E23 /* ProfileViewController.swift */; };
+		C953C4012370BC4400184E23 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C953C4002370BC4400184E23 /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		C953C3E42370BB8800184E23 /* UIKitSignInWithApple.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIKitSignInWithApple.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C953C3E72370BB8800184E23 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C953C3E92370BB8800184E23 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		C953C3EB2370BB8800184E23 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		C953C3EE2370BB8800184E23 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C953C3F02370BB8900184E23 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C953C3F32370BB8900184E23 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C953C3F52370BB8900184E23 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C953C3FC2370BBDC00184E23 /* NewsfeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsfeedViewController.swift; sourceTree = "<group>"; };
+		C953C3FE2370BC0C00184E23 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		C953C4002370BC4400184E23 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +58,24 @@
 		C953C3E62370BB8800184E23 /* UIKitSignInWithApple */ = {
 			isa = PBXGroup;
 			children = (
+				C953C3FB2370BBC600184E23 /* ViewControllers */,
 				C953C3E72370BB8800184E23 /* AppDelegate.swift */,
 				C953C3E92370BB8800184E23 /* SceneDelegate.swift */,
-				C953C3EB2370BB8800184E23 /* ViewController.swift */,
-				C953C3ED2370BB8800184E23 /* Main.storyboard */,
 				C953C3F02370BB8900184E23 /* Assets.xcassets */,
 				C953C3F22370BB8900184E23 /* LaunchScreen.storyboard */,
 				C953C3F52370BB8900184E23 /* Info.plist */,
 			);
 			path = UIKitSignInWithApple;
+			sourceTree = "<group>";
+		};
+		C953C3FB2370BBC600184E23 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				C953C3FC2370BBDC00184E23 /* NewsfeedViewController.swift */,
+				C953C3FE2370BC0C00184E23 /* ProfileViewController.swift */,
+				C953C4002370BC4400184E23 /* LoginViewController.swift */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,7 +138,6 @@
 			files = (
 				C953C3F42370BB8900184E23 /* LaunchScreen.storyboard in Resources */,
 				C953C3F12370BB8900184E23 /* Assets.xcassets in Resources */,
-				C953C3EF2370BB8800184E23 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,23 +148,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C953C3EC2370BB8800184E23 /* ViewController.swift in Sources */,
 				C953C3E82370BB8800184E23 /* AppDelegate.swift in Sources */,
 				C953C3EA2370BB8800184E23 /* SceneDelegate.swift in Sources */,
+				C953C3FF2370BC0C00184E23 /* ProfileViewController.swift in Sources */,
+				C953C4012370BC4400184E23 /* LoginViewController.swift in Sources */,
+				C953C3FD2370BBDC00184E23 /* NewsfeedViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		C953C3ED2370BB8800184E23 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C953C3EE2370BB8800184E23 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		C953C3F22370BB8900184E23 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
