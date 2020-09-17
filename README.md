@@ -12,3 +12,5 @@ Social login in iPhone apps is changing radically. Social login buttons will be 
 [Let’s dive into this Sign In with Apple UIKit Tutorial!](https://www.youtube.com/watch?v=rfeiRdttWa0&list=PL_csAAO9PQ8aZ2kmFmyfTNfiRBZZTMpt1&index=4)
 
 -- Alex
+
+https://www.youtube.com/watch?v=rfeiRdttWa0&list=PL_csAAO9PQ8aZ2kmFmyfTNfiRBZZTMpt1&index=4
